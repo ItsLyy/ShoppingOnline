@@ -1,0 +1,7 @@
+@import url('./root.css');
+
+#shopping {
+  background-color: var(--bg-color);
+
+  padding: var(--white-space);
+}

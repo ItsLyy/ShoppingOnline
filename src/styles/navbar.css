@@ -1,0 +1,32 @@
+header nav h2 {
+  color: var(--accent-color);
+}
+
+header nav .nav__menu .nav__item {
+  display: inline-block;
+  margin: 0 .5rem;
+}
+
+header nav .nav__menu .nav__item a {
+  text-decoration: none;
+  color: #2e2e2e;
+  padding: .8rem .3rem;
+
+  transition: color 200ms ease-in-out;
+}
+
+header nav .nav__menu .nav__item a:hover {
+  color: var(--accent-color);
+}
+
+header nav .nav__button__menu .nav__button {
+  background-color: transparent;
+  border: 1px solid var(--accent-color);
+  border-radius: 5px;
+  padding: .3rem;
+}
+
+header nav .nav__button__menu .nav__button span {
+  width: 1rem;
+  color: var(--accent-color);
+}
