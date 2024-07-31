@@ -1,3 +1,10 @@
+header.fixed {
+  position: fixed;
+  background-color: #fffbf591;
+  backdrop-filter: blur(2px);
+  box-shadow: 0 0 3px;
+}
+
 header nav h2 {
   color: var(--accent-color);
 }
@@ -5,28 +12,40 @@ header nav h2 {
 header nav .nav__menu .nav__item {
   display: inline-block;
   margin: 0 .5rem;
+  box-sizing: border-box;
 }
 
 header nav .nav__menu .nav__item a {
+  display: inline-block;
   text-decoration: none;
   color: #2e2e2e;
   padding: .8rem .3rem;
 
-  transition: color 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 header nav .nav__menu .nav__item a:hover {
   color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 header nav .nav__button__menu .nav__button {
   background-color: transparent;
-  border: 1px solid var(--accent-color);
+
+  border: none;
   border-radius: 5px;
-  padding: .3rem;
+
+  padding: .6rem;
+  margin: .2rem;
+
+  cursor: pointer;
 }
 
-header nav .nav__button__menu .nav__button span {
-  width: 1rem;
-  color: var(--accent-color);
+header nav .nav__button__menu .nav__button i {
+  color: #2e2e2e;
+  font-size: 1.1rem;
+}
+
+header nav .nav__button__menu .nav__button.nav__hamburger-menu {
+  display: none;
 }

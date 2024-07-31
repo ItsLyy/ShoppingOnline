@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A Website use to shopping online" />
 
     <link rel="stylesheet" href="../styles/app.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <title>BesTI Mart</title>
   </head>
@@ -20,12 +23,21 @@
         </ul>
         <div class="nav__button__menu">
           <button class="nav__button nav__shopping">
-            <span class="material-symbols-outlined">
-              menu
-              </span>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="21">
+              <g data-name="Layer 2">
+                <g data-name="shopping-cart">
+                  <rect width="24" height="24" opacity="0" />
+                  <path
+                    d="M21.08 7a2 2 0 0 0-1.7-1H6.58L6 3.74A1 1 0 0 0 5 3H3a1 1 0 0 0 0 2h1.24L7 15.26A1 1 0 0 0 8 16h9a1 1 0 0 0 .89-.55l3.28-6.56A2 2 0 0 0 21.08 7zm-4.7 7H8.76L7.13 8h12.25z"
+                  />
+                  <circle cx="7.5" cy="19.5" r="1.5" />
+                  <circle cx="17.5" cy="19.5" r="1.5" />
+                </g>
+              </g>
+            </svg>
           </button>
           <button class="nav__button nav__hamburger-menu">
-            <span></span>
+            <i class="fa-solid fa-bars"></i>
           </button>
         </div>
       </nav>
@@ -44,19 +56,15 @@
             </p>
             <button class="hero__letsbuy-button">Check More</button>
           </div>
-          <img
-            src="../assets/background/hero_image.png"
-            alt=""
-          />
+          <img src="../assets/background/hero_image.png" alt="" />
         </div>
       </section>
       <section id="shopping">
-        <div class="shopping__container">
-            
-          
-        </div>
+        <div class="shopping__container"></div>
       </section>
     </main>
     <footer></footer>
+
+    <script src="../scripts/app.js" type="module"></script>
   </body>
 </html>
