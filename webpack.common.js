@@ -1,6 +1,7 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
-  mode: 'production',
   entry: {
     app: path.resolve(__dirname, './src/scripts/app.js'),
   },
@@ -21,18 +22,12 @@ module.exports = {
           },
         ],
       },
-      {
-        test: /\.js$/,
-        exclude: '/node_modules/',
-        use: [
-          {
-            loader: 'babel-loader',
-            options: {
-              presets: ['@babel/preset-env']
-            }
-          }
-        ]
-      }
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './views/index.html',
+      filename: 'index.html'
+    })
+  ]
 }
