@@ -1,3 +1,5 @@
+import '../styles/app.css'
+
 window.addEventListener('DOMContentLoaded', () => {
   window.onscroll = () => {
     console.log(window.scrollY)
